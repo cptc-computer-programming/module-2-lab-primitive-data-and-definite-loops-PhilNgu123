@@ -10,13 +10,25 @@ public class PatternSection {
         // printDiamondTop();
         // printDiamondBottom();
         // printEdge();
+        printEdge();
+        printDiamondTop();
+        printDiamondBottom();
+        printEdge();
+
     }
 
     // TODO: Print the edge line that fits the width for SIZE.
     // Format: + followed by repeating "=*" and ending with +
     // Example for SIZE=2: +=*=*=*=*+
     public static void printEdge() {
-
+        // Print a +
+        System.out.print("+");
+        // write a loop to print =* a variable number of times
+        for (int n = 0; n < SIZE * 2; n ++) {
+            System.out.print("=*");
+        }
+        // print a
+        System.out.print("+");
     }
 
     // TODO: Print the top half of the “double-diamond” section.
@@ -40,3 +52,22 @@ public class PatternSection {
     }
     
 }
+
+/* 
+
++=*=*=*=*=*=*+
+|...../\.....|
+|..../\/\....|
+|.../\/\/\...|
+|../\/\/\/\..|
+|./\/\/\/\/\.|
+|/\/\/\/\/\/\|
+|\/\/\/\/\/\/|
+|.\/\/\/\/\/.|
+|..\/\/\/\/..|
+|...\/\/\/...|
+|....\/\/....|
+|.....\/.....|
++=*=*=*=*=*=*+
+
+*/
