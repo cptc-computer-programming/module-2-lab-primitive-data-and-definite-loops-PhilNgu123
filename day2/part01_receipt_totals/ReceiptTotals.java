@@ -20,10 +20,13 @@ public class ReceiptTotals {
 
         for(int item = 100; item <= 105; item ++) {
 
+            if((item-100) % 3 == 0) {
+                totalCost += 5;
+            } else {
             totalCost += 5;
 
 
-
+            }
         }
 
         System.out.println("total cost: $" + totalCost);
@@ -32,7 +35,11 @@ public class ReceiptTotals {
     // TODO:
     // Print a countdown from 5 down to 0 on one line.
     public static void printClosingCountdown() {
-    
+        
+        
+        for(int n = 5; n >= 0; n --) {
+            System.out.println(n);
+        }
     }
     
 }
